@@ -1,0 +1,3 @@
+CDrsOleKusuriPool::PutKmasRecInCache()
+	CDrsOleKusuriPool::PutKmasRecInCache\(\) Start
+	CDrsOleKusuriPool::PutKmasRecInCache\(\) End

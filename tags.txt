@@ -1,0 +1,12 @@
+CDrsOleDBMain::CreateObject2(DrsOleMasVerKusuri)
+	CDrsOleDBMain::CreateObject2\(\) Start, ObjName=DrsOleMasVerKusuri
+	CDrsOleDBMain::CreateObject2\(\) End, ObjName=DrsOleMasVerKusuri
+CDrsOleDBMain::CreateObject2(DrsOleMasVerKumas)
+	CDrsOleDBMain::CreateObject2\(\) Start, ObjName=DrsOleMasVerKumas
+	CDrsOleDBMain::CreateObject2\(\) End, ObjName=DrsOleMasVerKumas
+CDrsOleKusuriPool::PutKmasRecInCache(kusuri)
+	CDrsOleKusuriPool::PutKmasRecInCache\(\) Start
+	CDrsOleKusuriPool::PutKmasRecInCache\(\) End
+CDrsOleKusuriPool::PutKmasRecInCache(kumas)
+	CDrsOleKusuriPool::PutKmasRecInCache\(\) Start
+	CDrsOleKusuriPool::PutKmasRecInCache\(\) End

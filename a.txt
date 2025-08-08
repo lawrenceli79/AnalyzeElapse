@@ -1,0 +1,4 @@
+2025-08-05T12:18:52.719 CDrsOleDBMain::CreateObject2() Start, ObjName=DrsOleMasVerKusuri tc(0)
+2025-08-05T12:18:52.984 CDrsOleDBMain::CreateObject2() End, ObjName=DrsOleMasVerKusuri tc(266)
+2025-08-05T12:18:52.984 CDrsOleDBMain::CreateObject2() Start, ObjName=DrsOleMasVerKumas tc(0)
+2025-08-05T12:18:53.125 CDrsOleDBMain::CreateObject2() End, ObjName=DrsOleMasVerKumas tc(141)

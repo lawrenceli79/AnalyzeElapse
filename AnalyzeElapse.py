@@ -4,17 +4,19 @@ import re
 from datetime import datetime,timedelta
 from typing import ClassVar, Protocol
 
-if (len(sys.argv)<=2):
+if (len(sys.argv)<=3):
     str = ("Read dbg.txt and olemas32dbg.txt to anlyze elapse time. \n"
             "Usage:\n"
-            "   py {} <TagFile> olemas32dbg.txt\n"
+            "   py {} -e[ach] <TagFile> olemas32dbg.txt\n"
+            "   py {} -t[otal] <TagFile> olemas32dbg.txt\n"
             .format(os.path.basename(__file__))
     )
     print(str)
     sys.exit()
 
-strTagFile = sys.argv[1]
-strOlemas32dbgtxt = sys.argv[2]
+strMode = sys.argv[1].lower()
+strTagFile = sys.argv[2]
+strOlemas32dbgtxt = sys.argv[3]
 
 # For each elapse(Start, End)
 class CElapse:
@@ -116,5 +118,15 @@ with open(strOlemas32dbgtxt, errors='ignore') as fIn:
         for td in rgTd:
             td.Check(line)
 
-for td in rgTd:
-    td.PrintEach()
+if(strMode=="-e" or strMode=="-each"):
+    print("Each")
+    for td in rgTd:
+        td.PrintEach()
+elif(strMode=='-t' or strMode=="-total"):
+    print("Total")
+    for td in rgTd:
+        td.PrintTotal()
+elif(strMode=='-l' or strMode=="-last"):
+    print("Last")
+    for td in rgTd:
+        td.PrintLast()
